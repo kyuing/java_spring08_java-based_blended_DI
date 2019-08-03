@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- student2 --> 	
+	<bean id="xmlStudent" class="com.javalec.JAVA_XML_DI.Student">
+
+		<constructor-arg value="dab"/>
+		<constructor-arg value="15"/>
+		<constructor-arg>
+			<list>
+				<value>praying</value>
+				<value>meditation</value>
+			</list>
+		</constructor-arg>		
+		
+		<property name="height" value="294"/>
+		<property name="weight" value="44"/>
+	
+	</bean>
+
+</beans>
